@@ -8,7 +8,6 @@ wheels/
 
 # Virtual environments
 .venv/
-.env
 
 # Node / npm
 node_modules/
@@ -32,7 +31,7 @@ package-lock.json
 # OS / Editor
 .DS_Store
 Thumbs.db
-.vscode/
 .idea/
 *.suo
 *.sw?
+config.bat

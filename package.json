@@ -1,0 +1,13 @@
+{
+    "name": "lankacast-root",
+    "private": true,
+    "scripts": {
+        "dev": "npm run dev --prefix weatherApp",
+        "backend": "uv run main.py",
+        "build": "npm install --prefix weatherApp && npm run build --prefix weatherApp",
+        "start": "concurrently \"uv run main.py\" \"npm run dev --prefix weatherApp\""
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.2"
+    }
+}

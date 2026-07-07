@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "weatherApp/dist",
+  "functions": {
+    "api/index.py": {
+      "includeFiles": "weather_model.pkl,locationData.csv",
+      "excludeFiles": "{weatherData.csv,WheatherApp.ipynb,node_modules/**,weatherApp/node_modules/**,weatherApp/dist/**,__pycache__/**,*.log}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/predict",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

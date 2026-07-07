@@ -27,6 +27,7 @@ package-lock.json
 # Large data files
 *.csv
 !locationData.csv
+*.pkl
 
 # OS / Editor
 .DS_Store

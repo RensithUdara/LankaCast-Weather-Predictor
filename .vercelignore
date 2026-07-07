@@ -1,0 +1,9 @@
+node_modules/
+weatherApp/node_modules/
+weatherApp/dist/
+__pycache__/
+*.log
+weatherData.csv
+WheatherApp.ipynb
+.venv/
+.env

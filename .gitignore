@@ -34,5 +34,4 @@ Thumbs.db
 .idea/
 *.suo
 *.sw?
-.env
-.vscode/
+config.bat

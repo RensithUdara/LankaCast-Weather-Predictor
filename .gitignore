@@ -36,3 +36,6 @@ Thumbs.db
 *.sw?
 .env
 .vscode/
+.env.*
+.env.local
+.env.production

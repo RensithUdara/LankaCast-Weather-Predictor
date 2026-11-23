@@ -34,4 +34,7 @@ Thumbs.db
 .idea/
 *.suo
 *.sw?
-config.bat
+.env
+.env.*
+.env.local
+.env.production
